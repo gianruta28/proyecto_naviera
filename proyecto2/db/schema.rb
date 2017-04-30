@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170430210226) do
+ActiveRecord::Schema.define(version: 20170430211754) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,8 @@ ActiveRecord::Schema.define(version: 20170430210226) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.integer  "bl_master_id"
+    t.integer  "bl_house_id"
+    t.index ["bl_house_id"], name: "index_container_list_by_trips_on_bl_house_id", using: :btree
     t.index ["bl_master_id"], name: "index_container_list_by_trips_on_bl_master_id", using: :btree
   end
 
@@ -100,6 +102,7 @@ ActiveRecord::Schema.define(version: 20170430210226) do
   add_foreign_key "bl_houses", "shipping_companies"
   add_foreign_key "bl_masters", "nvoccs"
   add_foreign_key "bl_masters", "shipping_companies"
+  add_foreign_key "container_list_by_trips", "bl_houses"
   add_foreign_key "container_list_by_trips", "bl_masters"
   add_foreign_key "containers", "ships"
   add_foreign_key "ships", "shipping_companies"
