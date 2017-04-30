@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  commodity_origin: MyString
+  docking_date: 2017-04-30
+  travel_code: 1
+  bl_code: 1
+  client: one
+  commodity_destination: MyString
+  bl_master: one
+
+two:
+  commodity_origin: MyString
+  docking_date: 2017-04-30
+  travel_code: 1
+  bl_code: 1
+  client: two
+  commodity_destination: MyString
+  bl_master: two

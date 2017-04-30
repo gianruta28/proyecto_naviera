@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shipping_company: one
+  container_list_by_trip: one
+  commodity_origin: MyString
+  docking_date: 2017-04-30
+  travel_code: 1
+  bl_code: 1
+  nvocc: one
+
+two:
+  shipping_company: two
+  container_list_by_trip: two
+  commodity_origin: MyString
+  docking_date: 2017-04-30
+  travel_code: 1
+  bl_code: 1
+  nvocc: two

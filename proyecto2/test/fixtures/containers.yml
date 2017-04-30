@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  commdity: MyString
+  type: 
+  size: 1
+  identifier: MyString
+  string: MyString
+  ship: one
+
+two:
+  commdity: MyString
+  type: 
+  size: 1
+  identifier: MyString
+  string: MyString
+  ship: two
